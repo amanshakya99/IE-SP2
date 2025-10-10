@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(253, 253, 241);
+    text-align: center;
+}
+
+
+.site-header{
+    margin: 80px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.site-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 20px;
+    padding-left: 5rem;
+}
+
+a{
+    text-decoration: none;
+}
