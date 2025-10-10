@@ -6,6 +6,11 @@ body{
     text-align: center;
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 
 .site-header{
     margin: 80px;
@@ -13,6 +18,8 @@ body{
     position: relative;
     text-align: center;
     font-size: 30px;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    color: white;
 }
 
 
@@ -27,4 +34,5 @@ body{
 
 a{
     text-decoration: none;
+    color: white
 }
