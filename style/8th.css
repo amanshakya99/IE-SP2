@@ -5,14 +5,12 @@
 
 .bg-red {
     padding: 50px;
-    background-color: red;
-    position: sticky;
-    top: 0px;
+    background: linear-gradient(135deg, red 20%, yellow 60%, orange 100%);
 }
 
 .bg-blue {
     padding: 50px;
-    background-color: blue;
+    background: linear-gradient(135deg, blue 30%, cyan 70%, lightblue 100%);
 }
 
 body {
@@ -21,6 +19,7 @@ body {
 }
 
 header{
+    color: white;
     margin: 60px 80px;
     font-size: 1.5rem;
     text-align: center;
@@ -32,4 +31,21 @@ nav ul{
     display: flex;
     gap: 20px;
     justify-content: space-between;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    gap: 40px;
+}
+
+.flex-item{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    width: 30%;
+    border-radius: 10px;
+    color: black;
+
 }
