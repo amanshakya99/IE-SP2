@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: darkgrey;
+};
+
+
+header {
+  color: white;
+  margin: 0px 80px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  gap: 40px;
+}
+
+.flex-item {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  width: 30%;
+  border-radius: 10px;
+  color: black;
+}
+
+/* card */
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 0 5%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+}
+
+.card h3,
+.card p {
+  background: linear-gradient(135deg, #0ea5e9 0%, #a78bfa 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* card */
+
+/* hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(https://picsum.photos/1200/600) center/cover;
+  color: white;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+/* nav bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(135deg, #0ea5e9 0%, #a78bfa 50%, #f472b6 100%);
+}
+
+.nav-list {
+  display: none;
+  list-style: none;
+  gap: 1.5rem;
+
+}
+
+.nav-list.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* gemini */
+
+/* Basic styling for the container */
+.container {
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: row-reverse;
+    align-items: center; /* Vertically aligns items in the center */
+    max-width: 70%; /* Optional: Sets a max width for the whole block */
+    height: 400px;
+    margin: 40px auto; /* Optional: Centers the block on the page and adds vertical space */
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;/* Optional: Visual border for demonstration */
+    gap: 30px; /* Adds space between the text and image */
+    border-radius: 10px;
+}
+
+/* Styling for the text block (left side) */
+.content-text {
+    /* Use flex-grow to allow the text to take up more space */
+    flex-grow: 1; 
+
+    /* You can set a fixed width or a flex-basis if needed, e.g., flex-basis: 60%; */
+}
+
+/* Styling for the image block (right side) */
+.content-image {
+    /* Optional: You can set a specific width for the image block */
+    flex-shrink: 0; /* Prevents the image container from shrinking */
+    width: 50%; /* Example: The image block takes up 30% of the container width */
+    height: auto;
+}
+
+/* Ensures the image itself is responsive within its container */
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+/* gemini */
+
+@media (min-width: 600px) {
+  .menu-toggle {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    gap: 1.5rem;
+  }
+}

@@ -14,12 +14,12 @@
 }
 
 body {
-    width: 100%;
-    overflow-x: hidden;
-    background-color: var(--bg);
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg);
 }
 
-  /* light Mode */
+/* light Mode */
 body.light-mode {
   background-color: white;
   color: var(--accent);
@@ -175,7 +175,7 @@ body.light-mode {
     color: var(--bg);
     transition: ease-in-out 0.3s;
   }
-  section{
+  section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +183,7 @@ body.light-mode {
     margin: 2rem 0;
     width: 100%;
   }
-  .random-quotes{
+  .random-quotes {
     font-size: 1rem;
     line-height: 1.5rem;
     color: var(--text);
@@ -193,10 +193,67 @@ body.light-mode {
     border-radius: var(--radius);
     background-color: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-     /* NEW: Controls width growth */
+    /* NEW: Controls width growth */
     max-width: fit-content; /* limit the max width */
-    width: 90%;       /* allows responsiveness */
+    width: 90%; /* allows responsiveness */
     word-wrap: break-word; /* prevent overflow */
-    
-}
+  }
+
+  /* Header row */
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .project-header h2 {
+    color: var(--text) ;
+  }
+
+  .project-header h2 span {
+    color: var(--accent);
+  }
+
+  .project-header a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  /* Solid line next to "View More" */
+  .Solid-line {
+    height: 2px;
+    width: 30rem; /* adjust */
+    background: #fff;
+    margin-right: 10px;
+  }
+
+  /* Cards grid */
+  .Project-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(303px, 1fr));
+  }
+
+  /* Card styling */
+  .card {
+    background: transparent;
+    border: 1px solid #fff;
+    text-align: left;
+  }
+
+  .card img {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+  }
+
+  .card h3,
+  .card p {
+    color: #fff;
+    padding: 15px 20px;
+    margin: 0;
+    border-top: 1px solid #ffffff20;
+  }
 }
